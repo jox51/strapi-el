@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "published_picks",
+  "info": {
+    "singularName": "published-pick",
+    "pluralName": "published-picks",
+    "displayName": "published_pick",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "published_picks": {
+      "type": "json"
+    }
+  }
+}
