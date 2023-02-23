@@ -11,14 +11,13 @@ module.exports = {
       console.log(queryObj);
       console.log(ctx.request.query);
       console.log(ctx.params);
-      const data = await strapi.db.query("api::pick.pick").count({
+      ctx.body = await strapi.db.query("api::pick.pick").count({
         where: {
           id: {
             $in: queryObj,
           },
         },
       });
-      ctx.body = data;
     } catch (err) {
       ctx.body = err;
     }
